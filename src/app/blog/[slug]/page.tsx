@@ -44,12 +44,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   return { title: post.meta.title };
 }
 
-interface BlogPostPageProps {
-  params: { slug: string }
-}
-
-export default async function BlogPostPage(props: BlogPostPageProps) {
-  const { params } = props;
+export default async function BlogPostPage({ params }: { params: { slug: string } }) {
 
   const post = await getPost(params.slug);
   if (!post) return notFound();
