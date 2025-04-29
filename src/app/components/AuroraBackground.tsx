@@ -1,3 +1,4 @@
+"use client";
 // AuroraBackground.tsx
 // 动态极光渐变背景组件
 import React, { useRef, useEffect } from "react";
