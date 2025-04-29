@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180" height="48" viewBox="0 0 180 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="auroraGradientLight" x1="0" y1="0" x2="180" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7FCAFF" />
+      <stop offset="0.3" stop-color="#8F7CFF" />
+      <stop offset="0.7" stop-color="#B9FFEE" />
+      <stop offset="1" stop-color="#FFB6E6" />
+    </linearGradient>
+    <linearGradient id="auroraGradientDark" x1="0" y1="48" x2="180" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FFD0" />
+      <stop offset="0.4" stop-color="#3C50FF" />
+      <stop offset="0.8" stop-color="#A259FF" />
+      <stop offset="1" stop-color="#FF6EC7" />
+    </linearGradient>
+    <style type="text/css"><![CDATA[
+      @media (prefers-color-scheme: dark) {
+        .aurora-thread-logo-main { stroke: url(#auroraGradientDark); }
+        .aurora-thread-logo-text { fill: #F8F8FF; }
+      }
+      @media (prefers-color-scheme: light) {
+        .aurora-thread-logo-main { stroke: url(#auroraGradientLight); }
+        .aurora-thread-logo-text { fill: #21243D; }
+      }
+    ]]></style>
+  </defs>
+  <path class="aurora-thread-logo-main" d="M10 38 Q40 10 90 28 T170 15" stroke="url(#auroraGradientLight)" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <text x="15" y="44" font-family="'Segoe UI', 'Roboto', Arial, sans-serif" font-size="22" font-weight="bold" class="aurora-thread-logo-text">Aurora Threads</text>
+</svg>
