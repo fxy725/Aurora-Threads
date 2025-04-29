@@ -1,10 +1,11 @@
 import Image from "next/image";
 import AuroraBackground from "./components/AuroraBackground";
-import { FaGithub, FaBilibili, FaZhihu } from "react-icons/fa";
+import { FaGithub, FaZhihu } from "react-icons/fa";
+import { SiBilibili } from "react-icons/si";
 
 const SOCIALS = [
   { icon: FaGithub, url: "https://github.com/", label: "GitHub" },
-  { icon: FaBilibili, url: "https://bilibili.com/", label: "Bilibili" },
+  { icon: SiBilibili, url: "https://bilibili.com/", label: "Bilibili" },
   { icon: FaZhihu, url: "https://zhihu.com/", label: "Zhihu" },
 ];
 

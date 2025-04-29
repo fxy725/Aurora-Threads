@@ -25,6 +25,7 @@ export default function AuroraBackground() {
     const colors = auroraColors[colorMode];
 
     function drawAurora() {
+      if (!ctx) return;
       ctx.clearRect(0, 0, width, height);
       for (let i = 0; i < 3; i++) {
         ctx.save();
