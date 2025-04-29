@@ -12,13 +12,6 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 
-interface PostMeta {
-  title: string;
-  date: string;
-  tags: string[];
-  category?: string;
-  summary?: string;
-}
 
 async function getPost(slug: string) {
   const postPath = path.join(process.cwd(), "src/content/posts", `${slug}.md`);
