@@ -12,8 +12,8 @@ export default function AboutPage() {
   return (
     <div className="max-w-2xl mx-auto py-16 px-4 flex flex-col items-center">
       <Image
-        src="/avatar.png"
-        alt="Avatar"
+        src="https://github.com/fxy725.png"
+        alt="fxy725's GitHub Avatar"
         width={120}
         height={120}
         className="rounded-full shadow-lg mb-6"
