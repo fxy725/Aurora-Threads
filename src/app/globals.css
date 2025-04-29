@@ -5,12 +5,6 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -23,4 +17,99 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 卡片/面板美化 */
+.card, .bg-white\/90, .bg-white, .prose, .rounded-xl, .shadow-lg, .shadow-2xl, .border-gray-100 {
+  background: #fff;
+  color: #222;
+  transition: background 0.2s, color 0.2s;
+}
+.dark .card, .dark .bg-white\/90, .dark .bg-white, .dark .prose, .dark .rounded-xl, .dark .shadow-lg, .dark .shadow-2xl, .dark .border-gray-100 {
+  background: #181b20 !important;
+  color: #ededed !important;
+  border-color: #23272f !important;
+  box-shadow: 0 2px 16px #0006;
+}
+
+/* 按钮美化 */
+.button, .px-3.py-1.rounded, .hover\:bg-cyan-50, .dark\:hover\:bg-cyan-900 {
+  transition: background 0.2s, color 0.2s;
+}
+.dark .button, .dark .px-3.py-1.rounded {
+  background: #222c38;
+  color: #ededed;
+}
+
+/* 输入框美化 */
+input, textarea, select {
+  background: #fff;
+  color: #171717;
+  border: 1px solid #e5e7eb;
+}
+.dark input, .dark textarea, .dark select {
+  background: #222c38;
+  color: #ededed;
+  border: 1px solid #23272f;
+}
+
+/* 代码高亮美化（prismjs） */
+code, pre {
+  font-family: var(--font-mono, 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', monospace);
+}
+pre {
+  background: #f6f8fa;
+  color: #222;
+}
+.dark pre {
+  background: #181b20 !important;
+  color: #ededed !important;
+}
+.dark code {
+  background: #23272f !important;
+  color: #b5e0ff !important;
+}
+
+/* Prose（正文/markdown）暗色优化 */
+.prose {
+  --tw-prose-body: #222;
+  --tw-prose-headings: #181b20;
+  --tw-prose-links: #2563eb;
+  --tw-prose-bold: #222;
+  --tw-prose-counters: #181b20;
+  --tw-prose-bullets: #181b20;
+  --tw-prose-hr: #e5e7eb;
+  --tw-prose-quotes: #181b20;
+  --tw-prose-quote-borders: #e5e7eb;
+  --tw-prose-captions: #181b20;
+  --tw-prose-code: #d63384;
+  --tw-prose-pre-bg: #f6f8fa;
+  --tw-prose-pre-border: #e5e7eb;
+  --tw-prose-th-borders: #e5e7eb;
+  --tw-prose-td-borders: #e5e7eb;
+}
+.dark .prose {
+  --tw-prose-body: #ededed;
+  --tw-prose-headings: #ededed;
+  --tw-prose-links: #38bdf8;
+  --tw-prose-bold: #ededed;
+  --tw-prose-counters: #ededed;
+  --tw-prose-bullets: #ededed;
+  --tw-prose-hr: #23272f;
+  --tw-prose-quotes: #b5e0ff;
+  --tw-prose-quote-borders: #23272f;
+  --tw-prose-captions: #ededed;
+  --tw-prose-code: #38bdf8;
+  --tw-prose-pre-bg: #181b20;
+  --tw-prose-pre-border: #23272f;
+  --tw-prose-th-borders: #23272f;
+  --tw-prose-td-borders: #23272f;
+}
+
+/* 边框/分割线优化 */
+hr, .border, .border-gray-100 {
+  border-color: #e5e7eb;
+}
+.dark hr, .dark .border, .dark .border-gray-100 {
+  border-color: #23272f !important;
 }
